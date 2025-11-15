@@ -5,8 +5,8 @@
 
 # Решение
 
-## [KUBC.DAYZ.Core](Core/readme.md)
+## [KUBC.DAYZ.Core](Core)
 Базовые сущности игры.
-## [KUBC.DAYZ.Logging](Logging/readme.md)
+## [KUBC.DAYZ.Logging](Logging)
 Инструментарий для работы с журналами сервера.
 
