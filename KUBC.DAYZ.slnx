@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Элементы решения/">
+    <File Path="github.ico" />
+    <File Path="LICENSE.txt" />
+    <File Path="NuGet.Config" />
+    <File Path="readme.md" />
+  </Folder>
+  <Project Path="Core/Core.csproj" />
+  <Project Path="Logging/Logging.csproj" Id="557e5b1b-af94-4590-840b-aaf5b6b4f9f4" />
+  <Project Path="Testing/Testing.csproj" />
+</Solution>
