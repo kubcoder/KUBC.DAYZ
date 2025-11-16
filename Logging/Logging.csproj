@@ -16,7 +16,7 @@
 		<AssemblyName>KUBC.DAYZ.Logging</AssemblyName>
 		<Product>KUBC.DAYZ.Logging</Product>
 		<RepositoryUrl>https://github.com/kubcoder/KUBC.DAYZ.GAME</RepositoryUrl>
-		<PackageProjectUrl>https://www.nuget.org/packages/KUBC.DAYZ.Logging</PackageProjectUrl>
+		<PackageProjectUrl>https://kubcoder.ru/</PackageProjectUrl>
 		<PackageReleaseNotes>Обновили до стабильной версии .NET 10</PackageReleaseNotes>
 		<NeutralLanguage>ru</NeutralLanguage>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
