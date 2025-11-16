@@ -1,7 +1,7 @@
 ﻿namespace KUBC.DAYZ.Logging.ADM;
 
 /// <summary>
-/// Урон нанесен с помощью дистанционного оружия
+/// Урон нанесен с помощью дальнобойного оружия
 /// </summary>
 public class PlayerHitByDistanceWeapon : PlayerHitByWeapon
 {
