@@ -43,7 +43,7 @@ public class ADMTest(ITestOutputHelper output) : TestWithSample(output)
         Assert.Equal(6.0, gameEvent.Position.Z);
     }
 
-    
+
 
     [Fact]
     public void TestPlayerCouns()

@@ -7,7 +7,7 @@ namespace KUBC.DAYZ.Logging.RPT;
 /// <summary>
 /// Анализатор события о найденном STEAM ID игрока
 /// </summary>
-public class PlayerSteamFoundBuilder : Events.EventBuilder
+public class PlayerSteamFoundBuilder : EventBuilder
 {
     /// <inheritdoc/>
     public override GameEvent? Build(DateTime timeStamp, string data)
