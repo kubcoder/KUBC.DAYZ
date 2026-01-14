@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging;
 using System.Text;
 using RM = KUBC.DAYZ.Logging.Resources.LogFile;
 namespace KUBC.DAYZ.Logging;
@@ -40,7 +40,7 @@ public abstract class LogFile : IDisposable
             Logger.LogWarning(RM.NotOpenFile);
             return;
         }
-        Logger.LogTrace(RM.StartReadFile, fileName);
+        Logger.LogDebug(RM.StartReadFile, fileName);
         string? fileData;
         try
         {
@@ -53,10 +53,10 @@ public abstract class LogFile : IDisposable
         }
         if (fileData == null)
         {
-            Logger.LogTrace(RM.NotReadData, fileName);
+            Logger.LogDebug(RM.NotReadData, fileName);
             return;
         }
-        Logger.LogTrace(RM.ReadData, fileName, fileData.Length);
+        Logger.LogDebug(RM.ReadData, fileName, fileData.Length);
         var linesCount = 0;
         foreach (var symbol in fileData)
         {
@@ -64,7 +64,7 @@ public abstract class LogFile : IDisposable
             {
                 var line = currentString.ToString().Trim();
                 currentString.Clear();
-                Logger.LogTrace(RM.EndReadLine, fileName, line);
+                Logger.LogDebug(RM.EndReadLine, fileName, line);
                 linesCount++;
                 await OnLineReadAsync(line);
             }
@@ -80,7 +80,7 @@ public abstract class LogFile : IDisposable
                 }
             }
         }
-        Logger.LogTrace(RM.EndRead, fileName, fileReader.BaseStream.Position, linesCount, currentString.Length);
+        Logger.LogDebug(RM.EndRead, fileName, fileReader.BaseStream.Position, linesCount, currentString.Length);
     }
 
     /// <summary>

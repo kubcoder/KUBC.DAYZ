@@ -5,7 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<RootNamespace>KUBC.DAYZ.Logging</RootNamespace>
-		<Version>10.0.1</Version>
+		<Version>10.0.2</Version>
 		<Description>Компоненты для работы с логами сервера</Description>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Title>KUBC.DAYZ.Core</Title>
