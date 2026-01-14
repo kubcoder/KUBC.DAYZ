@@ -15,10 +15,10 @@
 		<Product>KUBC.DAYZ.Logging</Product>
 		<RepositoryUrl>https://github.com/kubcoder/KUBC.DAYZ.GAME</RepositoryUrl>
 		<PackageProjectUrl>https://kubcoder.ru/</PackageProjectUrl>
-		<PackageReleaseNotes>Воеменое решение для анализа логов версии игры 1.28</PackageReleaseNotes>
+		<PackageReleaseNotes>Исправлены уровни журналов сервисов</PackageReleaseNotes>
 		<NeutralLanguage>ru</NeutralLanguage>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
-		<Copyright>KUBC.DAYZ.Logging © 2025 KUBCODER</Copyright>
+		<Copyright>KUBC.DAYZ.Logging © 2026 KUBCODER</Copyright>
 		<PackageReadmeFile>Readme.md</PackageReadmeFile>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
@@ -49,7 +49,10 @@
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
-		<None Include="ChangeLog.md" />
+		<None Include="ChangeLog.md" >
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 		<None Include="..\dayz_icon.png">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>

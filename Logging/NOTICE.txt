@@ -1,5 +1,5 @@
 KUBC.DAYZ.Logging
-Copyright © 2025 KUBCODER
+Copyright © 2026 KUBCODER
 
 All code herein is licensed under the Apache 2.0 License (see the LICENSE file).
 
