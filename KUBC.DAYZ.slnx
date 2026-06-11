@@ -7,5 +7,6 @@
   </Folder>
   <Project Path="Core/Core.csproj" />
   <Project Path="Logging/Logging.csproj" Id="557e5b1b-af94-4590-840b-aaf5b6b4f9f4" />
+  <Project Path="MissionFiles/MissionFiles.csproj" Id="5d0eb4f7-0220-4909-81de-893cfdcb0095" />
   <Project Path="Testing/Testing.csproj" />
 </Solution>
