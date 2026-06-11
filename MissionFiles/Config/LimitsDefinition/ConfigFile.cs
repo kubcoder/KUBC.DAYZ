@@ -14,6 +14,11 @@ public class ConfigFile : IXmlSerializable
     /// </summary>
     public Categories Categories = [];
 
+    /// <summary>
+    /// Список доступных тэгов
+    /// </summary>
+    public Tags Tags = [];
+
 
     /// <inheritdoc/>
     public XmlSchema? GetSchema()
@@ -46,6 +51,9 @@ public class ConfigFile : IXmlSerializable
                 {
                     case Categories.ROOT_ELEMENT_NAME:
                         Categories.ReadXml(reader.ReadSubtree());
+                        break;
+                    case Tags.ROOT_ELEMENT_NAME:
+                        Tags.ReadXml(reader.ReadSubtree());
                         break;
                 }
             }

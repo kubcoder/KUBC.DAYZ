@@ -11,6 +11,16 @@ public class TestFile : MissionsTest
         var readFile = FileLoader.Load(missionPath);
         Assert.NotEmpty(readFile.Categories);
         CheckCategorise(readFile);
+        Assert.NotEmpty(readFile.Tags);
+        CheckTags(readFile.Tags);
+    }
+
+    private void CheckTags(Tags tags)
+    {
+        Assert.Equal(3, tags.Count);
+        Assert.Contains("floor", tags);
+        Assert.Contains("shelves", tags);
+        Assert.Contains("ground", tags);
     }
 
     private void CheckCategorise(ConfigFile readFile)
