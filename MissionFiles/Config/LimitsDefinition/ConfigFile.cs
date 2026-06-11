@@ -5,10 +5,16 @@ using System.Xml.Serialization;
 namespace KUBC.DAYZ.MissionFiles.Config.LimitsDefinition;
 
 /// <summary>
-/// Категории игровых предметов
+/// Сущность файла конфигурации лимитов
 /// </summary>
-public class Categories : List<string>, IXmlSerializable
+public class ConfigFile : IXmlSerializable
 {
+    /// <summary>
+    /// Список доступных категорий игровых предметов
+    /// </summary>
+    public Categories Categories = [];
+
+
     /// <inheritdoc/>
     public XmlSchema? GetSchema()
     {
@@ -18,7 +24,7 @@ public class Categories : List<string>, IXmlSerializable
     /// <inheritdoc/>
     public void ReadXml(XmlReader reader)
     {
-
+        throw new NotImplementedException();
     }
 
     /// <inheritdoc/>
