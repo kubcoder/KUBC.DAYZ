@@ -12,7 +12,7 @@ internal class DataWithVector
     public Vector? Position { get; set; }
 }
 
-public class TestVector(ITestOutputHelper output) : TestWithSample(output)
+public class TestVector : TestWithSample
 {
     [Fact]
     public async Task Load()
