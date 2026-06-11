@@ -27,6 +27,7 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\Core\Core.csproj" />
 	  <ProjectReference Include="..\Logging\Logging.csproj" />
+	  <ProjectReference Include="..\MissionFiles\MissionFiles.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -37,14 +38,17 @@
 	  <None Update="config.json">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
+	  <None Update="Sample\Mission\cfglimitsdefinition.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
 	  <None Update="Sample\Vectors.json">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Sample\" />
 	  <Folder Include="Logging\" />
+	  <Folder Include="Sample\Mission\" />
 	</ItemGroup>
 
 </Project>

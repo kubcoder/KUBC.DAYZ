@@ -24,7 +24,32 @@ public class ConfigFile : IXmlSerializable
     /// <inheritdoc/>
     public void ReadXml(XmlReader reader)
     {
-        throw new NotImplementedException();
+        while (reader.Read())
+        {
+            if (reader.IsStartElement())
+            {
+                if (reader.Name == ROOT_ELEMENT_NAME)
+                {
+                    ReadData(reader.ReadSubtree());
+                }
+            }
+        }
+    }
+
+    private void ReadData(XmlReader reader)
+    {
+        while (reader.Read())
+        {
+            if (reader.IsStartElement())
+            {
+                switch (reader.Name)
+                {
+                    case Categories.ROOT_ELEMENT_NAME:
+                        Categories.ReadXml(reader.ReadSubtree());
+                        break;
+                }
+            }
+        }
     }
 
     /// <inheritdoc/>
@@ -32,4 +57,6 @@ public class ConfigFile : IXmlSerializable
     {
         throw new NotImplementedException();
     }
+
+    private const string ROOT_ELEMENT_NAME = "lists";
 }
