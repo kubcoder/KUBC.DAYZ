@@ -1,4 +1,6 @@
 # Журнал версий
+* Thu Jun 11 2026 Alexey Gorshenin <agorshenin@kubcoder.ru> 10.0.3
+	* Обновлены используемые пакеты NUGET
 * Thu Jan 15 2026 Alexey Gorshenin <agorshenin@kubcoder.ru> 10.0.2
 	* Изменено
 		* Журналы уровня `Trace` теперь пишутся с уровнем `Debug`

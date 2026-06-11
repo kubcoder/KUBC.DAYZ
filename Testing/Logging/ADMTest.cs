@@ -1,7 +1,6 @@
 using KUBC.DAYZ.Logging.ADM;
 using KUBC.DAYZ.Logging.ADM.Builders;
 using KUBC.DAYZ.Logging.Events;
-using Xunit.Abstractions;
 
 namespace KUBC.DAYZ.Logging;
 

@@ -1,10 +1,10 @@
 using System.Text.Json;
-using Xunit.Abstractions;
+
 
 namespace KUBC.DAYZ.Core;
 
 /// <summary>
-/// Тестовый класс содержащий вектор
+/// РўРµСЃС‚РѕРІС‹Р№ РєР»Р°СЃСЃ СЃРѕРґРµСЂР¶Р°С‰РёР№ РІРµРєС‚РѕСЂ
 /// </summary>
 internal class DataWithVector
 {
@@ -20,7 +20,7 @@ public class TestVector(ITestOutputHelper output) : TestWithSample(output)
         var testFile = Samples.GetFiles("Vectors.json").FirstOrDefault();
         Assert.NotNull(testFile);
         using var file = testFile.OpenRead();
-        var data = await JsonSerializer.DeserializeAsync<DataWithVector>(file);
+        var data = await JsonSerializer.DeserializeAsync<DataWithVector>(file, cancellationToken: TestContext.Current.CancellationToken);
         Assert.NotNull(data);
         Assert.NotNull(data.Position);
         Assert.Equal(100.1, data.Position.X);
