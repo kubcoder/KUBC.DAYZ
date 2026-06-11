@@ -1,6 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging;
 using System.Text;
-using Xunit.Abstractions;
 
 namespace KUBC.DAYZ;
 
@@ -12,7 +11,7 @@ public class TestWithLogger : TestWithConfig
     /// <summary>
     /// Фабрика логов
     /// </summary>
-    public ILoggerFactory LoggerFactory => Microsoft.Extensions.Logging.LoggerFactory.Create(builder =>
+    public static ILoggerFactory LoggerFactory => Microsoft.Extensions.Logging.LoggerFactory.Create(builder =>
         builder.AddSimpleConsole(options =>
         {
             options.IncludeScopes = true;

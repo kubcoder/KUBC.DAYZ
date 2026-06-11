@@ -1,4 +1,3 @@
-﻿using Xunit.Abstractions;
 
 namespace KUBC.DAYZ;
 
@@ -8,5 +7,5 @@ namespace KUBC.DAYZ;
 /// <param name="output">Интерфейс вывода в результаты теста</param>
 public class TestWithSample(ITestOutputHelper output) : TestWithLogger(output)
 {
-    public DirectoryInfo Samples => new DirectoryInfo("Sample");
+    public static DirectoryInfo Samples => new("Sample");
 }
