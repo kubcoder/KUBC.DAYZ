@@ -5,7 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<RootNamespace>KUBC.DAYZ.Logging</RootNamespace>
-		<Version>10.0.3</Version>
+		<Version>10.0.4</Version>
 		<Description>Компоненты для работы с логами сервера</Description>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Title>KUBC.DAYZ.Core</Title>
@@ -15,7 +15,7 @@
 		<Product>KUBC.DAYZ.Logging</Product>
 		<RepositoryUrl>https://github.com/kubcoder/KUBC.DAYZ.GAME</RepositoryUrl>
 		<PackageProjectUrl>https://kubcoder.ru/</PackageProjectUrl>
-		<PackageReleaseNotes>Исправлены уровни журналов сервисов</PackageReleaseNotes>
+		<PackageReleaseNotes>Обновление используемых пакетов</PackageReleaseNotes>
 		<NeutralLanguage>ru</NeutralLanguage>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Copyright>KUBC.DAYZ.Logging © 2026 KUBCODER</Copyright>
@@ -60,7 +60,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.9" />
+	  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.11" />
 	</ItemGroup>
 
 	<ItemGroup>

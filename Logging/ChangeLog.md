@@ -1,4 +1,6 @@
 # Журнал версий
+* Sa Aug 28 2026 Alexey Gorshenin <agorshenin@kubcoder.ru> 10.0.4
+	* Обновлены используемые пакеты NUGET
 * Thu Jun 11 2026 Alexey Gorshenin <agorshenin@kubcoder.ru> 10.0.3
 	* Обновлены используемые пакеты NUGET
 * Thu Jan 15 2026 Alexey Gorshenin <agorshenin@kubcoder.ru> 10.0.2
