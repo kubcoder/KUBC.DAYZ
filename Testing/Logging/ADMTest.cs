@@ -4,7 +4,7 @@ using KUBC.DAYZ.Logging.Events;
 
 namespace KUBC.DAYZ.Logging;
 
-public class ADMTest(ITestOutputHelper output) : TestWithSample(output)
+public class ADMTest : TestWithConfig
 {
 
     [Fact]
